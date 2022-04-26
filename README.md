@@ -27,7 +27,8 @@ $ Java -jar <pathtoproject>/target/rewards-0.0.1-SNAPSHOT.jar
 
 ## API
    purchases
-	   API used to post the transactions made by the customers. will be used to setup the Test data for the application.
+	  API used to post the transactions made by the customers. will be used to setup the Test data for the application.
+	
 	Domain : http://localhost:8080
 	URI : /api/purchases
 	Method : POST
