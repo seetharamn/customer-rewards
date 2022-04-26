@@ -15,9 +15,9 @@ For building and running the application you need:
 
 ## Building the Project
 Clone the project and use maven to build the server.
-- $ mvn -f <pathtoPomFile> clean install
-	Where <pathtoPomFile>  is the path to the POM file.
-	It generates the Jar file which is located in the folder target/rewards-0.0.1-SNAPSHOT.jar
+- $ mvn -f "pathtoPomFile" clean install
+   Where "pathtoPomFile"  is the path to the POM file.
+   It generates the Jar file which is located in the folder target/rewards-0.0.1-SNAPSHOT.jar
 	
 ## Launch the Application
 Execute the following command to launch the application
