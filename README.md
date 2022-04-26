@@ -12,6 +12,7 @@ For building and running the application you need:
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or higher
 - [Maven 3](https://maven.apache.org)
 - Git
+- Curl or Postman to execute the Rest-API
 
 ## Building the Project
 Clone the project and use maven to build the server.
@@ -82,9 +83,12 @@ application will be running on the port 8080.
         "MARCH": 150.4, 
         "FEBRUARY": 22.599999999999994,
         "APRIL": 1136.8}}
-	
+
 Test Data : 
    To upload the purchases
+	
+Use curl or the Postman to execute the REST-Api.
+	
 	
 [{
     "customerId":"C001",
