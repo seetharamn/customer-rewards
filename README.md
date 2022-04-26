@@ -22,8 +22,10 @@ Clone the project and use maven to build the server.
 	
 ## Launch the Application
 Execute the following command to launch the application
+
 $ Java -jar <pathtoproject>/target/rewards-0.0.1-SNAPSHOT.jar
-	application will be running on the port 8080.
+	
+application will be running on the port 8080.
 
 ## API
    purchases
@@ -53,7 +55,6 @@ $ Java -jar <pathtoproject>/target/rewards-0.0.1-SNAPSHOT.jar
 	
 	Response :
 	    A JSON Array of the purchases made by the customers.
-	
    Sample Output
     [{
  "Id" : "1" // unique identifier for the record.
@@ -81,6 +82,60 @@ $ Java -jar <pathtoproject>/target/rewards-0.0.1-SNAPSHOT.jar
         "MARCH": 150.4, 
         "FEBRUARY": 22.599999999999994,
         "APRIL": 1136.8}}
+	
+Test Data : 
+   To upload the purchases
+	
+[{
+    "customerId":"C001",
+    "amount":"120.30",
+    "transactionDate":"04/25/2022"
+},{
+    "customerId":"C001",
+    "amount":"598.10",
+    "transactionDate":"04/20/2022"
+},{
+    "customerId":"C001",
+    "amount":"150.00",
+    "transactionDate":"03/10/2022"
+},{
+    "customerId":"C001",
+    "amount":" 50.00",
+    "transactionDate":"03/30/2022"
+},{
+    "customerId":"C001",
+    "amount":"50.40",
+    "transactionDate":"03/05/2022"
+},{
+    "customerId":"C001",
+    "amount":"72.60",
+    "transactionDate":"02/10/2022"
+},{
+    "customerId":"C002",
+    "amount":"117.30",
+    "transactionDate":"04/25/2022"
+},{
+    "customerId":"C002",
+    "amount":"99.30",
+    "transactionDate":"04/15/2022"
+},{
+    "customerId":"C002",
+    "amount":"1017.30",
+    "transactionDate":"03/20/2022"
+},{
+    "customerId":"C002",
+    "amount":"315.99",
+    "transactionDate":"02/25/2022"
+},{
+    "customerId":"C002",
+    "amount":"119.67",
+    "transactionDate":"03/05/2022"
+},
+{
+    "customerId":"C002",
+    "amount":"617.39",
+    "transactionDate":"02/28/2022"
+}]
  
 	
 	
