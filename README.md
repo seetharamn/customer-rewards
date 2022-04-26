@@ -42,7 +42,7 @@ $ Java -jar <pathtoproject>/target/rewards-0.0.1-SNAPSHOT.jar
 	
 	
   Purchases
-    Read the transactions uploaded.
+    Read the transactions uploaded
 	
 	Domain : http://localhost:8080
 	URI : /api/purchases
@@ -61,7 +61,9 @@ $ Java -jar <pathtoproject>/target/rewards-0.0.1-SNAPSHOT.jar
     "transactionDate":"04/25/2022" //purchased Date}]	
 
 # Rewards
-	  Compute the rewards based on the purchases made by the customer.
+	  
+	Compute the rewards based on the purchases made by the customer.
+	
 	Domain : http://localhost:8080
 	URI : /api/rewards/{customerId}
 	Method : GET
