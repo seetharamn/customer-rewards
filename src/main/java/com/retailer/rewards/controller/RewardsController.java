@@ -32,7 +32,7 @@ public class RewardsController {
 	
 	@ExceptionHandler(CustomerNotFoundException.class)
 	public ResponseEntity<Object> handleExceptions(CustomerNotFoundException exception) {
-		return new ResponseEntity<>("Customer Not Found",HttpStatus.OK);
+		return new ResponseEntity<>("Customer Not Found",HttpStatus.BAD_REQUEST);
 	}
 	
 	@PostMapping("/purchases")

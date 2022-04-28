@@ -12,14 +12,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.NonNull;
 
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Setter
 public class Purchase {
 	
 	@Id
@@ -28,12 +27,16 @@ public class Purchase {
 	private int id;
 	
 	@JsonProperty("customerId")
+	@NonNull
 	private String customerId;
 	
 	@JsonProperty("amount")
+	@NonNull
 	private double amount;
 	
+	
 	@JsonFormat(pattern = "MM/dd/yyyy")
+	@NonNull
 	private Date transactionDate;
 
 	public double getAmount() {
@@ -42,6 +45,18 @@ public class Purchase {
 
 	public Date getTransactionDate() {
 		return transactionDate;
+	}
+
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+	public void setTransactionDate(Date transactionDate) {
+		this.transactionDate = transactionDate;
 	}
 	
 	

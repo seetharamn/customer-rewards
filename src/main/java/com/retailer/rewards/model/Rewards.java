@@ -21,8 +21,13 @@ public class Rewards {
 		this.total = total;
 		this.monthlyRewards = monthlyRewards;
 	}
-	
-	
 
+	public double getTotal() {
+		return total;
+	}
+
+	public Map<String, Double> getMonthlyRewards() {
+		return monthlyRewards;
+	}
 	
 }
